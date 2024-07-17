@@ -18,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <h2> ---- Olá, para realizar o envio por favor insira seu PDF, e a url da sua imagem de capa! Para mais informações entre em contato direto conosco pelo email:indietora@gmail.com ou pelo fone:53 9 9988-7766! Obrigada! ^^ ---</h2>
         <EdgeStoreProvider>{children}</EdgeStoreProvider>
       </body>
     </html>

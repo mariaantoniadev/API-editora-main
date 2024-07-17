@@ -20,7 +20,7 @@ function Pesquisa() {
         <div className="relative">
           <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
             <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
             </svg>
           </div>
           <input type="search" name="pesq" id="default-search" className="block w-full p-4 ps-10 text-sm text-gray-900 border border-black rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Informe título ou gênero do livro" required />
@@ -32,7 +32,7 @@ function Pesquisa() {
       <button 
         onClick={scrollToSection}
         type="button" 
-        className="ml-4 mt-1.5 focus:outline-none text-purple-700 border border-purple-700 hover:bg-purple-100 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:border-purple-600 dark:text-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">
+        className="ml-4 mt-1.5 focus:outline-none text-black bg-[#FDB96A] hover:bg-yellow-600 hover:text-white focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:border-yellow-600 dark:text-black dark:hover:bg-yellow-700 dark:hover:text-white dark:focus:ring-yellow-900">
         Lançamentos
       </button>
     </div>

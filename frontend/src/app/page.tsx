@@ -82,56 +82,32 @@ export default async function Home() {
           </div>
         </div>
       </div>
-      <div>
-        <div className="pt-10 w-full grid grid-cols-4 bg-black text-white font-semibold">
-          <div>
-            <div className="flex flex-wrap text-">
-              <img src="./logo.png" className="h-16" alt="Editora Logo" />
-              <img
-                src="./logoescrito.png"
-                className="h-16"
-                alt="Editora Logo"
-              />
-            </div>
+      <footer className="bg-blue-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="flex flex-col items-center md:items-start">
+            <img src="./logoescrito.png" className="h-16" alt="Editora Logo" />
           </div>
 
           <div>
-            <h2 className="text-yellow-200">Quick Links</h2>
-            <h2>Sobre nós</h2>
-            <h2>Contatos</h2>
-            <h2>Login</h2>
-            <h2>Cadastro</h2>
+            <h2 className="font-semibold mb-2" style={{ color: "#FDB96A" }}>
+             
+            </h2>
+            
           </div>
 
           <div>
-            <h2 className="text-yellow-200">Pessoal</h2>
-            <h2>Minha Conta</h2>
-            <h2>Coleção</h2>
-            <h2>Termos</h2>
-            <h2>Politica de Privacidade</h2>
-            <h2>FAQ</h2>
+            <h2 className="font-semibold mb-2" style={{ color: "#FDB96A" }}>
+              
+            </h2>
           </div>
 
           <div>
-            <h1 className="text-yellow-200">Não fique de fora!</h1>
-            <h1>Seja ja um leitor parceiro ou autor parceiro</h1>
-            <div className="grid grid-cols-2">
-              <div>
-                <input
-                  type="email"
-                  className="mt-12 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="Seu email"
-                />
-              </div>
-              <div>
-                <button className="mt-12 ml-7 text-purple-900 bg-white hover:bg-gray-300 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-white ">
-                  Inscreva-se
-                </button>
-              </div>
-            </div>
+            <h2 className="font-semibold mb-2" style={{ color: "#FDB96A" }}>
+            Seja já um leitor parceiro ou autor parceiro!
+            </h2>
           </div>
         </div>
-      </div>
+      </footer>
     </>
   );
 }

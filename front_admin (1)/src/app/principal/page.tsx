@@ -64,52 +64,7 @@ export default function Home() {
 
   return (
     <div className="container">
-      <h2 className="text-3xl mb-4 font-bold">Visão Geral do Sistema</h2>
-
-      <div className="w-2/3 flex justify-between mx-auto mb-5">
-        <div className="border-blue-600 border rounded p-6">
-          <span className="bg-blue-100 text-blue-800 text-xl text-center font-bold mx-auto block px-2.5 py-5 rounded dark:bg-blue-900 dark:text-blue-300">
-            {geral.clientes}
-          </span>
-          <p className="font-bold mt-2">Nº Clientes</p>
-        </div>
-        <div className="border-red-600 border rounded p-6">
-          <span className="bg-red-100 text-red-800 text-xl text-center font-bold mx-auto block px-2.5 py-5 rounded dark:bg-red-900 dark:text-red-300">
-            {geral.livros}
-          </span>
-          <p className="font-bold mt-2">Nº Livros</p>
-        </div>
-        <div className="border-green-600 border rounded p-6">
-          <span className="bg-green-100 text-green-800 text-xl text-center font-bold mx-auto block px-2.5 py-5 rounded dark:bg-green-900 dark:text-green-300">
-            R$:{" "}
-            {geral.precoMedio
-              ? geral.precoMedio.toLocaleString("pt-br", {
-                  minimumFractionDigits: 2,
-                  maximumFractionDigits: 2,
-                })
-              : "N/A"}
-          </span>
-          <p className="font-bold mt-2 text-center">Preço Médio</p>
-        </div>
-        <div className="border-purple-600 border rounded p-6">
-          <span className="bg-purple-100 text-purple-800 text-xl text-center font-bold mx-auto block px-2.5 py-5 rounded dark:bg-purple-900 dark:text-purple-300">
-            {geral.avaliacoes}
-          </span>
-          <p className="font-bold mt-2">Nº Avaliações</p>
-        </div>
-        <div className="border-pink-600 border rounded p-6">
-          <span className="bg-pink-100 text-pink-800 text-xl text-center font-bold mx-auto block px-2.5 py-5 rounded dark:bg-pink-900 dark:text-pink-300">
-            {geral.avaliacoes_dia}
-          </span>
-          <p className="font-bold mt-2">Nº Avaliações no Dia</p>
-        </div>
-      </div>
-
-      <h2 className="text-2xl font-bold mt-4">
-        Gráfico: Nº de Estrelas dadas pelos clientes para os livros cadastrados
-        (em %)
-      </h2>
-      <Chart chartType="ColumnChart" width="95%" height="380px" data={data} />
+      
     </div>
   );
 }

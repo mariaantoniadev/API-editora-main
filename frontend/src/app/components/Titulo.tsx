@@ -38,8 +38,8 @@ function Titulo() {
 
   return (
     <nav
-      style={{ backgroundColor: "#0A0A0A", borderColor: "#0A0A0A" }}
-      className="border-blue-300 py-1.5 bg-blue-200 dark:bg-blue-900 dark:border-blue-100"
+      style={{ backgroundColor: "#1E3A8A", borderColor: "#1E3A8A" }}
+      className="border-blue-300 py-1.5 bg-blue-200"
     >
       <div className="max-w-screen-xl flex items-center justify-between mx-auto px-4">
         <Link
@@ -53,15 +53,15 @@ function Titulo() {
         </div>
         <div className="flex items-center space-x-2">
           {idClienteLogado ? (
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2 text-white">
               <span>{nomeClienteLogado}</span>
               <span onClick={logout} style={{ cursor: "pointer" }}>
                 <RxExit className="inline" title="Sair" />
               </span>
-              <Link href="http://localhost:3002/">
+              <Link target="_blank" href="http://localhost:3002/">
                 <button
                   type="submit"
-                  className="text-orange-700 absolute end-2.5 bottom-2.5 border border-orange-700 hover:bg-orange-100 hover:text-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-4 py-2 dark:border-orange-600 dark:text-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800"
+                  className="text-orange-700 absolute end-2.5 bottom-2.5 border border-orange-700 hover:bg-orange-100 hover:text-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-4 py-2"
                 >
                   Enviar livro
                 </button>
@@ -70,7 +70,7 @@ function Titulo() {
           ) : (
             <Link
               href="/login"
-              className="block py-2 px-4 focus:outline-none text-black bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+              className="block py-2 px-4 focus:outline-none text-black bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm"
               aria-current="page"
               style={{ backgroundColor: "#FDB96A" }}
             >

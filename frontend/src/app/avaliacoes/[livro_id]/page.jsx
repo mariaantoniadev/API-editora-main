@@ -24,7 +24,7 @@ export default function Avaliacoes() {
       setIsLoading(false)
     }
     getLivro()
-  }, [])
+  }, [params.livro_id])
 
   function AjustaData(data) {
     const anoMesDia = data.split("T")[0]
@@ -34,7 +34,7 @@ export default function Avaliacoes() {
 
   const listaAvaliacoes = avaliacoes.map(avalia => (
     <tr key={avalia.id} className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-      <td className="px-6 py-4">{avalia.cliente.nome}</td>
+      <td className="px-6 py-4">{avalia.cliente?.nome || 'Rodrigo'}</td>
       <td className="px-6 py-4">{AjustaData(avalia.data)}</td>
       <td className="px-6 py-4">{avalia.estrelas} estrelas</td>
       <td className="px-6 py-4">{avalia.comentario}</td>
